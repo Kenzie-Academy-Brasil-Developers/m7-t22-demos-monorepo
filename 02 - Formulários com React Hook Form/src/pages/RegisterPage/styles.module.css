@@ -1,0 +1,9 @@
+.registerPage {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.registerPage > h2 {
+  font-size: 2rem;
+}
