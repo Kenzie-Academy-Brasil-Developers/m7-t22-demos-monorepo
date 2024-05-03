@@ -1,0 +1,14 @@
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputBox > input {
+  padding: 1rem;
+}
+
+.inputBox > p {
+  color: red;
+  font-size: 0.75rem;
+}
