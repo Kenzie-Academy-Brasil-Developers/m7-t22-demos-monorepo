@@ -1,0 +1,51 @@
+%buttonDefault {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  font-weight: 500;
+  font-size: 1.125rem;
+  font-family: var(--font-primary);
+  letter-spacing: 1.5px;
+}
+
+.btn {
+  @extend %buttonDefault;
+  height: 3rem;
+  padding: 0 1rem;
+  border: 1px solid black;
+
+  &.solid {
+    border-color: var(--color-blue);
+    background-color: var(--color-blue);
+    color: var(--color-white);
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
+
+  &.outline {
+    border-color: var(--color-blue);
+    color: var(--color-blue);
+
+    &:hover {
+      background-color: var(--color-blue);
+      color: var(--color-white);
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.link {
+  @extend %buttonDefault;
+  color: var(--color-blue);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
