@@ -1,0 +1,19 @@
+.scrapListSection {
+  min-height: 85vh;
+
+  & > div:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  ul {
+    margin-top: 1.875rem;
+  }
+
+  ul > :first-child {
+    border-top: 1px solid var(--color-blue);
+  }
+}
